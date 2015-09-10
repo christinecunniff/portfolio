@@ -1,0 +1,58 @@
+@import 'partials/grids';
+@import 'partials/variables';
+@import 'partials/tables';
+@import 'partials/nav';
+@import 'partials/images';
+@import 'partials/buttons';
+
+body {
+	background-color: $color-body;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	margin: 0;
+}
+
+h1 {
+	background-color: black;
+	color: $color-bright;
+	font-weight: bolder;
+	letter-spacing: 10px;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+}
+
+h3 {
+	margin: 0;
+}
+
+h4 {
+	background-color: $color-light;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	width: 96%;
+}
+
+/* content for index.html */
+p {
+	padding: 10px;
+}
+
+p.bio {
+
+    @include breakpoint(small){
+    	float: right;
+    	width: 60%;
+    }
+}
+
+.wrap {
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-right: 0;
+	width: 90%;
+}
+
+
+

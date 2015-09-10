@@ -1,0 +1,212 @@
+@media all and (min-width: 420px) {
+  .grid-col {
+    float: left;
+    padding: 10px;
+    width: 45%; }
+
+  .wrap {
+    margin: 0 auto; } }
+@media all and (min-width: 960px) {
+  .grid-col {
+    width: 45%; } }
+table, th, td {
+  background-color: white;
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-size: 16px;
+  padding: 10px; }
+  table td.left, th td.left, td td.left {
+    background-color: #99FFFF; }
+    table td.left:hover, th td.left:hover, td td.left:hover {
+      background-color: black; }
+      table td.left:hover a, th td.left:hover a, td td.left:hover a {
+        color: #00FFFF;
+        text-decoration: underline;
+        transition: all .2s; }
+
+table a {
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: underline; }
+
+.nav-wrapper {
+  background-color: white;
+  border-bottom: 2px solid black;
+  overflow: auto;
+  width: 100%;
+  margin-top: 0; }
+
+.nav-main {
+  margin: 0;
+  margin-right: 20px;
+  padding: 0; }
+  .nav-main li {
+    display: block;
+    float: right;
+    margin-right: 10px; }
+    .nav-main li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: black; }
+      .nav-main li a:hover {
+        background-color: #99FFFF;
+        color: white;
+        transition: all .2s; }
+    .nav-main li a.is-active {
+      background-color: #99FFFF;
+      color: black;
+      text-decoration: line-through; }
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  font-weight: bold;
+  text-decoration: none; }
+
+.bio a {
+  font-size: 20px;
+  padding: 5px;
+  text-decoration: underline; }
+  .bio a:hover {
+    background-color: black;
+    color: #00FFFF;
+    transition: all .2s; }
+
+footer {
+  background-color: black;
+  color: #99FFFF;
+  clear: both;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 50px;
+  padding: 20px; }
+  footer .icons {
+    text-align: center; }
+  footer i {
+    padding-right: 30px; }
+  footer a,
+  footer a:visited {
+    color: white; }
+  footer a:hover,
+  footer a:active {
+    color: #00FFFF;
+    transition: all .2s; }
+
+.me {
+  border: 5px solid black;
+  border-radius: 25%;
+  float: left;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  width: 35%; }
+  @media all and (min-width: 420px) {
+    .me {
+      margin-right: 0; } }
+
+.shots a {
+  position: relative;
+  display: inline-block; }
+  .shots a .line {
+    background-color: rgba(192, 192, 192, 0.3);
+    color: white;
+    opacity: 0;
+    font-size: 16px;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: right;
+    transform: translate(-50%);
+    transition: all .2s; }
+  .shots a img {
+    border: 3px solid black;
+    margin: 0;
+    margin-bottom: 50px;
+    max-width: 900px;
+    width: 95%;
+    transition: all .2s;
+    position: relative; }
+  .shots a:hover .line {
+    opacity: 1;
+    z-index: 10; }
+  .shots a:hover img {
+    transform: scale(1.2, 1.2);
+    border: 5px solid #99FFFF;
+    z-index: 5; }
+
+/*.shots img {
+	border: 3px solid black;
+	margin: 0;
+	margin-bottom: 50px;
+	max-width: 900px;
+	width: 95%;
+	transition: all .2s;
+	position: relative;
+
+	&:hover {
+		transform: scale(1.2, 1.2);
+		border: 5px solid #99FFFF;
+		z-index: 5;
+	}
+}
+*/
+.port {
+  background-color: #99FFFF;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 150px; }
+  .port:hover {
+    background-color: #00FFFF;
+    padding: 7px 160px;
+    transition: all .2s; }
+  .port a {
+    text-decoration: none;
+    font-size: 16px; }
+    .port a:hover {
+      background-color: #00FFFF;
+      color: black; }
+
+body {
+  background-color: #FFE0FF;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin: 0; }
+
+h1 {
+  background-color: black;
+  color: #00FFFF;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  margin: 0;
+  padding: 30px;
+  text-align: center; }
+
+h3 {
+  margin: 0; }
+
+h4 {
+  background-color: #99FFFF;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 96%; }
+
+/* content for index.html */
+p {
+  padding: 10px; }
+
+@media all and (min-width: 420px) {
+  p.bio {
+    float: right;
+    width: 60%; } }
+
+.wrap {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-right: 0;
+  width: 90%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+@mixin breakpoint($breakpoint){
+	@if $breakpoint == small {
+		@media all and (min-width: 420px){
+			@content;
+		}
+	} @else if $breakpoint == med {
+		@media all and (min-width: 769px){
+			@content;
+		}
+	} @else if $breakpoint == large {
+		@media all and (min-width: 960px){
+			@content;
+		}
+	}
+}
+
+@include breakpoint(small){
+	.grid-col {
+		float: left;
+		padding: 10px;
+		width: 45%;
+	}
+
+	.wrap {
+		margin: 0 auto;
+	}
+	
+}
+@include breakpoint(large){
+	.grid-col {
+		width: 45%;
+	}
+}

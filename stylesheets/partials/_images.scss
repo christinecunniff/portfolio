@@ -1,0 +1,70 @@
+.me {
+    border: 5px solid black;
+    border-radius: 25%;
+	float: left;
+	margin-bottom: 50px; 
+	margin-right: 10px;
+	width: 35%;
+
+	 @include breakpoint(small){
+	 	margin-right: 0;
+	 }
+}
+.shots a {
+	position: relative;
+	display: inline-block;
+
+	.line {
+		background-color:rgba(192,192,192,0.3);
+		color: white;
+		opacity: 0;
+		font-size: 16px;
+		padding: 20px;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		text-align: right;
+		transform: translate(-50%);
+		transition: all .2s;
+	}
+
+	img {
+		border: 3px solid black;
+		margin: 0;
+		margin-bottom: 50px;
+		max-width: 900px;
+		width: 95%;
+		transition: all .2s;
+		position: relative;
+	}
+
+	&:hover{
+		.line {
+			opacity: 1;
+			z-index: 10;
+		}
+
+		img {
+			transform: scale(1.2, 1.2);
+			border: 5px solid #99FFFF;
+			z-index: 5;
+		}
+	}
+}
+
+/*.shots img {
+	border: 3px solid black;
+	margin: 0;
+	margin-bottom: 50px;
+	max-width: 900px;
+	width: 95%;
+	transition: all .2s;
+	position: relative;
+
+	&:hover {
+		transform: scale(1.2, 1.2);
+		border: 5px solid #99FFFF;
+		z-index: 5;
+	}
+}
+*/

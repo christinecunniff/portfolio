@@ -1,0 +1,96 @@
+.nav-wrapper {
+	background-color: white;
+	border-bottom: 2px solid black;
+	overflow: auto;
+	width: 100%;
+	margin-top: 0;
+	
+}
+
+.nav-main {
+	margin: 0;
+	margin-right: 20px;
+	padding: 0;
+
+
+	li {
+		display: block;
+		float: right;
+		margin-right: 10px;
+
+		a {
+			display: block;
+			padding: 5px;
+			text-decoration: none;
+			color: black;
+
+			&:hover{
+				background-color: $color-light;
+				color: white;
+				transition: all .2s;
+			}
+		}
+		a.is-active {
+		background-color: $color-light;
+		color: black;
+		text-decoration: line-through;
+	}
+	}
+}
+
+
+a,
+a:visited,
+a:hover,
+a:active {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.bio a {
+	font-size: 20px;
+	padding: 5px;
+	text-decoration: underline;
+
+	
+	&:hover {
+		background-color: black;
+		color: $color-bright;
+		transition: all .2s;
+	}
+}
+
+
+footer {
+	background-color: black;
+	color: $color-light;
+	clear: both;
+	font-size: 14px;
+	margin: 0;
+	margin-top: 50px;
+	padding: 20px;
+
+	.icons {
+		text-align: center;
+	}
+
+	i { 
+	padding-right: 30px;
+	}
+
+	a,
+	a:visited {
+		color: white;
+	}
+	a:hover,
+	a:active {
+		color: $color-bright;
+		transition: all .2s;
+	}
+
+}
+
+
+
+
