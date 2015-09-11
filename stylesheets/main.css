@@ -108,7 +108,8 @@ footer {
 
 .shots a {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
   .shots a .line {
     background-color: rgba(192, 192, 192, 0.3);
     color: white;
@@ -126,7 +127,7 @@ footer {
     margin: 0;
     margin-bottom: 50px;
     max-width: 900px;
-    width: 95%;
+    width: 100%;
     transition: all .2s;
     position: relative; }
   .shots a:hover .line {
@@ -137,22 +138,6 @@ footer {
     border: 5px solid #99FFFF;
     z-index: 5; }
 
-/*.shots img {
-	border: 3px solid black;
-	margin: 0;
-	margin-bottom: 50px;
-	max-width: 900px;
-	width: 95%;
-	transition: all .2s;
-	position: relative;
-
-	&:hover {
-		transform: scale(1.2, 1.2);
-		border: 5px solid #99FFFF;
-		z-index: 5;
-	}
-}
-*/
 .port {
   background-color: #99FFFF;
   border: 2px solid black;
@@ -168,6 +153,9 @@ footer {
     .port a:hover {
       background-color: #00FFFF;
       color: black; }
+
+* {
+  box-sizing: Border-box; }
 
 body {
   background-color: #FFE0FF;
@@ -191,8 +179,7 @@ h4 {
   background-color: #99FFFF;
   margin: 0;
   padding: 0;
-  text-align: center;
-  width: 96%; }
+  text-align: center; }
 
 /* content for index.html */
 p {

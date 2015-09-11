@@ -5,6 +5,8 @@
 @import 'partials/images';
 @import 'partials/buttons';
 
+* { box-sizing: Border-box; }
+
 body {
 	background-color: $color-body;
 	font-family: 'Lato', sans-serif;
@@ -31,7 +33,7 @@ h4 {
     margin: 0;
     padding: 0;
     text-align: center;
-	width: 96%;
+	// width: 96%;
 }
 
 /* content for index.html */
